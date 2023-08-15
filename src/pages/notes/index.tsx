@@ -1,4 +1,5 @@
 import React from "react";
+import Layout from "../../components/Layout";
 
 type Props = {
     title: string;
@@ -12,11 +13,13 @@ type Props = {
 
 export default function Notes(props: Props) {
     return (
-        <div>
-            <h1>Notes</h1>
-            <p>
-                this is notes
-            </p>
-        </div>
+        <Layout>
+            <div>
+                <h1>Notes</h1>
+                <p>
+                    this is notes
+                </p>
+            </div>
+        </Layout>
     )
 }
